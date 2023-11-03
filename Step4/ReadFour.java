@@ -24,13 +24,10 @@ public class ReadFour
                 int sum = 0;
                 //Read and write the total
                 while (fileIn.hasNext()) {
-                    //Read next line
                     String lineIn = fileIn.nextLine();
 
-                    //get new total
                     sum += Integer.parseInt(lineIn);
 
-                    //Save to fileOut
                     fileOut.println("Running total = " + sum);
                 }
                 fileOut.close();
